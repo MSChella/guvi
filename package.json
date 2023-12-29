@@ -21,12 +21,24 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+
+  "module.exports" : {
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "jsx-a11y/anchor-is-valid": ["error", {
+       " components": ["App"],
+        "specialLink": ["#!"]
+      }]
+    }
   },
+  
+  
   "browserslist": {
     "production": [
       ">0.2%",
