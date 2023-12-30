@@ -7,19 +7,18 @@ import { useState } from 'react';
 
 function App() {
 
-  const [products, setProducts] = useState(["", "", "", ""]);
+  // const [products, setProducts] = useState(["", "", "", ""]);
   return <>
     (
     <div className="App">
       <Navigation />
       <Header />
-      <section className='py-5'>
 
-        {products.map((product, index) => (
-          <MainPageCard key={`product-${index}`} />
 
-        ))}
-      </section>
+
+      <MainPageCard />
+
+
 
     </div>)
 
