@@ -1,7 +1,14 @@
 
 import React from 'react'
+import MainPageCard from '../Main Page/MainPageCard'
 
-const Navigation = () => {
+
+
+
+
+const Navigation = ({ cartQuantity }) => {
+
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
