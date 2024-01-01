@@ -3724,7 +3724,7 @@ textarea.form-control-lg {
 .tab-content > .active {
   display: block;
 }
-
+/* {//made the navbar sticky to make user expereince} */
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
@@ -3746,7 +3746,9 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
+  position:-webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

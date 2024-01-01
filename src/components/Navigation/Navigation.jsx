@@ -1,7 +1,14 @@
 
 import React from 'react'
+import MainPageCard from '../Main Page/MainPageCard'
 
-const Navigation = () => {
+
+
+
+
+const Navigation = ({ cartQuantity }) => {
+
+
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -25,7 +32,7 @@ const Navigation = () => {
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart">{cartQuantity}</span>
                         </button>
                     </form>
                 </div>
